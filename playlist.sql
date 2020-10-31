@@ -41,7 +41,6 @@ VALUES ("Blue-Eyes White Yeti", "I Met a Yeti", "Camp Yeti");
 
 
 
-
 CREATE TABLE rap(
     id INT NOT NULL AUTO_INCREMENT,
     title VARCHAR(45) NULL,
@@ -80,7 +79,38 @@ VALUES ("Antidote", "Travis Scott", "Rodeo");
 INSERT INTO rap (title, artist, album)
 VALUES ("JUNKY", "BROCKHAMPTON", "SATURATION II");
 
+INSERT INTO rap (title, artist, album)
+VALUES ("L$D", "A$AP Rocky", "AT.LONG.LAST.A$AP");
 
+INSERT INTO rap (title, artist, album)
+VALUES ("Pharsyde", "A$AP Rocky", "AT.LONG.LAST.A$AP");
+
+INSERT INTO rap (title, artist, album)
+VALUES ("Goldie", "A$AP Rocky", "LONG.LIVE.A$AP");
+
+INSERT INTO rap (title, artist, album)
+VALUES ("Baby Blue", "Action Bronson", "Mr. Wonderful");
+
+INSERT INTO rap (title, artist, album)
+VALUES ("3005", "Childish Gambino", "Because the Internet");
+
+INSERT INTO rap (title, artist, album)
+VALUES ("Lost", "Danny Brown", "Atrocity Exhibition");
+
+INSERT INTO rap (title, artist, album)
+VALUES ("Chum", "Earl Sweatshirt", "Doris");
+
+INSERT INTO rap (title, artist, album)
+VALUES ("Soul Right", "Freddie Gibbs", "Bandana");
+
+INSERT INTO rap (title, artist, album)
+VALUES ("Codeine Crazy", "Future", "Monster");
+
+INSERT INTO rap (title, artist, album)
+VALUES ("Smile", "JAY-Z", "4:44");
+
+INSERT INTO rap (title, artist, album)
+VALUES ("General", "JID", "The Never Story");
 
 
 CREATE TABLE undergroundHipHop(
@@ -122,21 +152,6 @@ VALUES ("Faygo Dreams", "6 Dogs", "6 Dogs");
 INSERT INTO undergroundHipHop(title, artist, album)
 VALUES ("Joestar", "Father", "Hu$band");
 
-
-
-
-
-CREATE TABLE indie(
-    id INT NOT NULL AUTO_INCREMENT,
-    title VARCHAR(45) NULL,
-    artist VARCHAR(45) NULL,
-    album VARCHAR(45) NULL,
-    PRIMARY KEY(id)
-);
-
-INSERT INTO indie(title, artist, album)
-VALUES ("Sixteen", "Oscar Welsh", "Sixteen");
-
 INSERT INTO undergroundHipHop(title, artist, album)
 VALUES ("Best Friend", "Rex Orange Counter", "Best Friend");
 
@@ -163,3 +178,91 @@ VALUES ("West Coast", "Coconut Records", "Hu$b");
 
 
 
+
+CREATE TABLE indie(
+    id INT NOT NULL AUTO_INCREMENT,
+    title VARCHAR(45) NULL,
+    artist VARCHAR(45) NULL,
+    album VARCHAR(45) NULL,
+    PRIMARY KEY(id)
+);
+
+INSERT INTO indie(title, artist, album)
+VALUES ("Sixteen", "Oscar Welsh", "Sixteen");
+
+
+
+CREATE TABLE alternative(
+     id INT NOT NULL AUTO_INCREMENT,
+    title VARCHAR(45) NULL,
+    artist VARCHAR(45) NULL,
+    album VARCHAR(45) NULL,
+    PRIMARY KEY(id)
+)
+
+INSERT INTO alternative(title, artist, album)
+VALUES ("Performer", "Montero", "Montero");
+
+INSERT INTO alternative(title, artist, album)
+VALUES ("Endless Shore", "Melody's Echo Chamber", "Melody's Echo Chamber");
+
+INSERT INTO alternative(title, artist, album)
+VALUES ("And I", "Box Car Racer", "Box Car Racer");
+
+INSERT INTO alternative(title, artist, album)
+VALUES ("Pikachu", "Yung Lean", "Starz");
+
+INSERT INTO alternative(title, artist, album)
+VALUES ("Lovenote", "Bladee", "Eversince");
+
+INSERT INTO alternative(title, artist, album)
+VALUES ("Some Kind of Nature", "Gorillaz", "Plastic Beach");
+
+INSERT INTO alternative(title, artist, album)
+VALUES ("Andromeda", "Gorillaz", "Humanz");
+
+INSERT INTO alternative(title, artist, album)
+VALUES ("November Has Come", "Gorillaz", "Demon Days");
+
+INSERT INTO alternative(title, artist, album)
+VALUES ("In One Ear", "Cage the Elephant", "Cage the Elephant");
+
+INSERT INTO alternative(title, artist, album)
+VALUES ("Shake Me Down", "Cage the Elephant", "Thank You Happy Birthday");
+
+INSERT INTO alternative(title, artist, album)
+VALUES ("Shake Me Down", "Cage the Elephant", "Tell Me I'm Pretty");
+
+INSERT INTO alternative(title, artist, album)
+VALUES ("Skin and Bones", "Cage the Elephant", "Social Cues");
+
+INSERT INTO alternative(title, artist, album)
+VALUES ("Peroxide", "Ecco2k", "E");
+
+
+
+CREATE TABLE rock(
+    id INT NOT NULL AUTO_INCREMENT,
+    title VARCHAR(45) NULL,
+    artist VARCHAR(45) NULL,
+    album VARCHAR(45) NULL,
+    PRIMARY KEY(id)
+);
+
+INSERT INTO rock(title, artist, album)
+VALUES ("Watch the World", "Box Car Racer", "Box Car Racer");
+
+INSERT INTO rock(title, artist, album)
+VALUES ("Needles In the Camel's Eye", "Brian Eno", "Here Come the Warm Jets");
+
+INSERT INTO rock(title, artist, album)
+VALUES ("She Sells Sanctuary", "The Cult", "Love");
+
+INSERT INTO rock(title, artist, album)
+VALUES ("Lil Devil", "The Cult", "Electric");
+
+INSERT INTO rock(title, artist, album)
+VALUES ("Electric Ocean", "The Cult", "Electric");
+
+INSERT INTO rock(title, artist, album)
+VALUES ("No Revolution", "The Explosion", "Black Tape");
