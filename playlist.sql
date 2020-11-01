@@ -266,3 +266,93 @@ VALUES ("Electric Ocean", "The Cult", "Electric");
 
 INSERT INTO rock(title, artist, album)
 VALUES ("No Revolution", "The Explosion", "Black Tape");
+
+INSERT INTO rock(title, artist, album)
+VALUES ("Thunderstruck", "ACDC", "The Razors Edge");
+
+INSERT INTO rock(title, artist, album)
+VALUES ("Highway to hell", "ACDC", "Highway to Hell");
+
+INSERT INTO rock(title, artist, album)
+VALUES ("Hells Bells", "ACDC", "Back in Black");
+
+INSERT INTO rock(title, artist, album)
+VALUES ("Shoot to Thrill", "ACDC", "Back in Black");
+
+INSERT INTO rock(title, artist, album)
+VALUES ("Hells Bells", "ACDC", "Back in Black");
+
+INSERT INTO rock(title, artist, album)
+VALUES ("Moneytalks", "ACDC", "The Razors Edge");
+
+INSERT INTO rock(title, artist, album)
+VALUES ("Dr. Feelgood", "Motley Crue", "Dr. Feelgood");
+
+INSERT INTO rock(title, artist, album)
+VALUES ("Kickstart My Heart", "Motley Crue", "Dr. Feelgood");
+
+INSERT INTO rock(title, artist, album)
+VALUES ("Live Wire", "Motley Crue", "Too Fast for Love");
+
+INSERT INTO rock(title, artist, album)
+VALUES ("Take Me to the Top", "Motley Crue", "Too Fast for Love");
+
+INSERT INTO rock(title, artist, album)
+VALUES ("Piece of Your Action", "Motley Crue", "Too Fast for Love");
+
+
+CREATE TABLE electronic(
+    id INT NOT NULL AUTO_INCREMENT,
+    title VARCHAR(45) NULL,
+    artist VARCHAR(45) NULL,
+    album VARCHAR(45) NULL,
+    PRIMARY KEY(id)
+);
+
+INSERT INTO electronic(title, artist, album)
+VALUES ("Genesis", "Grimes", "Visions");
+
+INSERT INTO electronic(title, artist, album)
+VALUES ("Oblivion", "Grimes", "Visions");
+
+INSERT INTO electronic(title, artist, album)
+VALUES ("Visiting Statue", "Grimes", "Visions");
+
+INSERT INTO electronic(title, artist, album)
+VALUES ("Flesh Without Blood", "Grimes", "Art Angels");
+
+INSERT INTO electronic(title, artist, album)
+VALUES ("Only One", "Little Dragon", "Nabuma Rubberband");
+
+INSERT INTO electronic(title, artist, album)
+VALUES ("New Fiction", "Little Dragon", "New Me, Same Us");
+
+INSERT INTO electronic(title, artist, album)
+VALUES ("Every Rain", "Little Dragon", "New Me, Same Us");
+
+INSERT INTO electronic(title, artist, album)
+VALUES ("Roads", "Portishead", "Dummy");
+
+INSERT INTO electronic(title, artist, album)
+VALUES ("Sour Times", "Portishead", "Dummy");
+
+INSERT INTO electronic(title, artist, album)
+VALUES ("Glory Box", "Portishead", "Dummy");
+
+INSERT INTO electronic(title, artist, album)
+VALUES ("Mysterons", "Portishead", "Dummy");
+
+INSERT INTO electronic(title, artist, album)
+VALUES ("Waiting for Love", "Avicii", "Stories");
+
+
+CREATE TABLE country(
+    id INT NOT NULL AUTO_INCREMENT,
+    title VARCHAR(45) NULL,
+    artist VARCHAR(45) NULL,
+    album VARCHAR(45) NULL,
+    PRIMARY KEY(id)
+);
+
+INSERT INTO country(title, artist, album)
+VALUES ("Why Would", "You Ever", "Listen to Country");
