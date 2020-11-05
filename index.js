@@ -21,6 +21,8 @@ app.get('/', (req, res) => {
   res.render('index')
 })
 
+app.use(express.static('public'))
+
 db.sequelize.sync().then(function () {
   // ...
   app.listen(PORT, () => {
@@ -28,7 +30,16 @@ db.sequelize.sync().then(function () {
   })
 })
 
-// 1. Connect it with MySQL (OK)
-// 2. Express Server (OK)
-// 3. Setup Handlebars (OK)
-// 4. Deploy (OK)
+// var con = mysql.createConnection({
+//   host: "127.0.0.1",
+//   user: "root",
+//   password: "",
+//   database: "playlistdb"
+// });
+// con.connect(function(err) {
+//   if (err) throw err;
+//   con.query("SELECT * FROM rap", function (err, result, fields) {
+//     if (err) throw err;
+//     console.log(result);
+//   });
+// });
