@@ -4,6 +4,8 @@ var db = require('./models')
 var express = require('express')
 var hbs = require('express-handlebars')
 
+// var connection = require('./config/connection.js');
+
 var app = express()
 
 app.engine('handlebars', hbs({ defaultLayout: 'main' }))
@@ -11,14 +13,26 @@ app.set('view engine', 'handlebars')
 
 const PORT = process.env.PORT || 8080
 
-app.get('/api', (req, res) => {
-  db.Test.findAll().then((result) => {
+// connection.connect(function(err) {
+//   if (err) {
+//     console.error('error connecting: ' + err.stack);
+//     return;
+//   };
+//   console.log('connected as id ' + connection.threadId);
+// });
+
+
+app.get('/api/rap', (req, res) => {
+  db.Rap.findAll().then((result) => {
     res.json(result)
   })
 })
 
 app.get('/', (req, res) => {
   res.render('index')
+
+  
+
 })
 
 app.use(express.static('public'))
