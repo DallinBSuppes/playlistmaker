@@ -41,7 +41,8 @@ VALUES ("Blue-Eyes White Yeti", "I Met a Yeti", "Camp Yeti");
 
 
 
-CREATE TABLE rap(
+CREATE TABLE Rap
+(
     id INT NOT NULL AUTO_INCREMENT,
     title VARCHAR(45) NULL,
     artist VARCHAR(45) NULL,
@@ -49,98 +50,129 @@ CREATE TABLE rap(
     PRIMARY KEY(id)
 );
 
-INSERT INTO rap (title, artist, album)
+INSERT INTO Rap
+ (title, artist, album)
 VALUES ("Self Care", "Mac Miller", "Swimming");
 
-INSERT INTO rap (title, artist, album)
+INSERT INTO Rap
+ (title, artist, album)
 VALUES ("Through the Wire", "Kanye West", "College Dropout");
 
-INSERT INTO rap (title, artist, album)
+INSERT INTO Rap
+ (title, artist, album)
 VALUES ("Earthquake", "Tyler the Creator", "Igor");
 
-INSERT INTO rap (title, artist, album)
+INSERT INTO Rap
+ (title, artist, album)
 VALUES ("Soundtrack 2 My Life", "Kid Cudi", "Man on the Moon");
 
-INSERT INTO rap (title, artist, album)
+INSERT INTO Rap
+ (title, artist, album)
 VALUES ("Soul Food", "Logic", "Under Pressure");
 
-INSERT INTO rap (title, artist, album)
+INSERT INTO Rap
+ (title, artist, album)
 VALUES ("Self Care", "Mac Miller", "Swimming");
 
-INSERT INTO rap (title, artist, album)
+INSERT INTO Rap
+ (title, artist, album)
 VALUES ("Sumo", "Denzel Curry", "TA1300");
 
-INSERT INTO rap (title, artist, album)
+INSERT INTO Rap
+ (title, artist, album)
 VALUES ("Self Care", "Mac Miller", "Swimming");
 
-INSERT INTO rap (title, artist, album)
+INSERT INTO Rap
+ (title, artist, album)
 VALUES ("Antidote", "Travis Scott", "Rodeo");
 
-INSERT INTO rap (title, artist, album)
+INSERT INTO Rap
+ (title, artist, album)
 VALUES ("JUNKY", "BROCKHAMPTON", "SATURATION II");
 
-INSERT INTO rap (title, artist, album)
+INSERT INTO Rap
+ (title, artist, album)
 VALUES ("L$D", "A$AP Rocky", "AT.LONG.LAST.A$AP");
 
-INSERT INTO rap (title, artist, album)
+INSERT INTO Rap
+ (title, artist, album)
 VALUES ("Pharsyde", "A$AP Rocky", "AT.LONG.LAST.A$AP");
 
-INSERT INTO rap (title, artist, album)
+INSERT INTO Rap
+ (title, artist, album)
 VALUES ("Goldie", "A$AP Rocky", "LONG.LIVE.A$AP");
 
-INSERT INTO rap (title, artist, album)
+INSERT INTO Rap
+ (title, artist, album)
 VALUES ("Baby Blue", "Action Bronson", "Mr. Wonderful");
 
-INSERT INTO rap (title, artist, album)
+INSERT INTO Rap
+ (title, artist, album)
 VALUES ("3005", "Childish Gambino", "Because the Internet");
 
-INSERT INTO rap (title, artist, album)
+INSERT INTO Rap
+ (title, artist, album)
 VALUES ("Lost", "Danny Brown", "Atrocity Exhibition");
 
-INSERT INTO rap (title, artist, album)
+INSERT INTO Rap
+ (title, artist, album)
 VALUES ("Chum", "Earl Sweatshirt", "Doris");
 
-INSERT INTO rap (title, artist, album)
+INSERT INTO Rap
+ (title, artist, album)
 VALUES ("Soul Right", "Freddie Gibbs", "Bandana");
 
-INSERT INTO rap (title, artist, album)
+INSERT INTO Rap
+ (title, artist, album)
 VALUES ("Codeine Crazy", "Future", "Monster");
 
-INSERT INTO rap (title, artist, album)
+INSERT INTO Rap
+ (title, artist, album)
 VALUES ("Smile", "JAY-Z", "4:44");
 
-INSERT INTO rap (title, artist, album)
+INSERT INTO Rap
+ (title, artist, album)
 VALUES ("General", "JID", "The Never Story");
 
-INSERT INTO rap (title, artist, album)
+INSERT INTO Rap
+ (title, artist, album)
 VALUES ("Reborn", "KIDS SEE GHOSTS", "KIDS SEE GHOSTS");
 
-INSERT INTO rap (title, artist, album)
+INSERT INTO Rap
+ (title, artist, album)
 VALUES ("20 Min", "Lil Uzi Vert", "Luv is Rage 2");
 
-INSERT INTO rap (title, artist, album)
+INSERT INTO Rap
+ (title, artist, album)
 VALUES ("The Way Life Goes", "Lil Uzi Vert", "Luv is Rage 2");
 
-INSERT INTO rap (title, artist, album)
+INSERT INTO Rap
+ (title, artist, album)
 VALUES ("Money Longer", "Lil Uzi Vert", "Lil Uzi Vert vs. The World");
 
-INSERT INTO rap (title, artist, album)
+INSERT INTO Rap
+ (title, artist, album)
 VALUES ("Baby Are You Home", "Lil Uzi Vert", "Lil Uzi Vert vs. The World");
 
-INSERT INTO rap (title, artist, album)
+INSERT INTO Rap
+ (title, artist, album)
 VALUES ("Walk the World", "Lil B", "6 Kiss");
 
-INSERT INTO rap (title, artist, album)
+INSERT INTO Rap
+ (title, artist, album)
 VALUES ("Real Plexx", "Lil B", "6 Kiss");
 
-INSERT INTO rap (title, artist, album)
+INSERT INTO Rap
+ (title, artist, album)
 VALUES ("Let the Eagles Go", "Lil B", "6 Kiss");
 
-INSERT INTO rap (title, artist, album)
+INSERT INTO Rap
+ (title, artist, album)
 VALUES ("Clueless", "Lucki", "Freewave 2");
 
 
-CREATE TABLE oldSchoolRap(
+CREATE TABLE oldSchoolRap
+(
     id INT NOT NULL AUTO_INCREMENT,
     title VARCHAR(45) NULL,
     artist VARCHAR(45) NULL,
@@ -148,85 +180,112 @@ CREATE TABLE oldSchoolRap(
     PRIMARY KEY(id)
 );
 
-INSERT INTO oldSchoolRap (title, artist, album)
+INSERT INTO oldSchoolRap
+ (title, artist, album)
 VALUES ("Solid Wall of Sound", "A Tribe Called Quest", "We got it from Here... Thank You 4 Your service");
 
-INSERT INTO oldSchoolRap (title, artist, album)
+INSERT INTO oldSchoolRap
+ (title, artist, album)
 VALUES ("The Space Program", "A Tribe Called Quest", "We got it from Here... Thank You 4 Your service");
 
-INSERT INTO oldSchoolRap (title, artist, album)
+INSERT INTO oldSchoolRap
+ (title, artist, album)
 VALUES ("Ms. Fat Booty", "Mos Def", "Black on Both Sides");
 
-INSERT INTO oldSchoolRap (title, artist, album)
+INSERT INTO oldSchoolRap
+ (title, artist, album)
 VALUES ("UMI Says", "Mos Def", "Black on Both Sides");
 
-INSERT INTO oldSchoolRap (title, artist, album)
+INSERT INTO oldSchoolRap
+ (title, artist, album)
 VALUES ("Rock n Roll", "Mos Def", "Black on Both Sides");
 
-INSERT INTO oldSchoolRap (title, artist, album)
+INSERT INTO oldSchoolRap
+ (title, artist, album)
 VALUES ("Affirmative Action", "Nas", "It Was Written");
 
-INSERT INTO oldSchoolRap (title, artist, album)
+INSERT INTO oldSchoolRap
+ (title, artist, album)
 VALUES ("If I Ruled the World", "Nas", "It Was Written");
 
-INSERT INTO oldSchoolRap (title, artist, album)
+INSERT INTO oldSchoolRap
+ (title, artist, album)
 VALUES ("The World is Yours", "Nas", "Illmatic");
 
-INSERT INTO oldSchoolRap (title, artist, album)
+INSERT INTO oldSchoolRap
+ (title, artist, album)
 VALUES ("Represent", "Nas", "Illmatic");
 
-INSERT INTO oldSchoolRap (title, artist, album)
+INSERT INTO oldSchoolRap
+ (title, artist, album)
 VALUES ("Turbulence", "Deltron 3030", "Deltron 3030");
 
-INSERT INTO oldSchoolRap (title, artist, album)
+INSERT INTO oldSchoolRap
+ (title, artist, album)
 VALUES ("3030", "Deltron 3030", "Deltron 3030");
 
-INSERT INTO oldSchoolRap (title, artist, album)
+INSERT INTO oldSchoolRap
+ (title, artist, album)
 VALUES ("Positive Contact", "Deltron 3030", "Deltron 3030");
 
-INSERT INTO oldSchoolRap (title, artist, album)
+INSERT INTO oldSchoolRap
+ (title, artist, album)
 VALUES ("Virus", "Deltron 3030", "Deltron 3030");
 
-INSERT INTO oldSchoolRap (title, artist, album)
+INSERT INTO oldSchoolRap
+ (title, artist, album)
 VALUES ("Above the Clouds", "Gang Starr", "Moment of Truth");
 
-INSERT INTO oldSchoolRap (title, artist, album)
+INSERT INTO oldSchoolRap
+ (title, artist, album)
 VALUES ("Moment of Truth", "Gang Starr", "Moment of Truth");
 
-INSERT INTO oldSchoolRap (title, artist, album)
+INSERT INTO oldSchoolRap
+ (title, artist, album)
 VALUES ("You Know My Steez", "Gang Starr", "Moment of Truth");
 
-INSERT INTO oldSchoolRap (title, artist, album)
+INSERT INTO oldSchoolRap
+ (title, artist, album)
 VALUES ("Mass Appeal", "Gang Starr", "Hard to Earn");
 
-INSERT INTO oldSchoolRap (title, artist, album)
+INSERT INTO oldSchoolRap
+ (title, artist, album)
 VALUES ("They Reminisce Over You", "Pete Rock", "Mecca and the Soul Brother");
 
-INSERT INTO oldSchoolRap (title, artist, album)
+INSERT INTO oldSchoolRap
+ (title, artist, album)
 VALUES ("You Gots to Chill", "EPMD", "Strictly Business");
 
-INSERT INTO oldSchoolRap (title, artist, album)
+INSERT INTO oldSchoolRap
+ (title, artist, album)
 VALUES ("Moment of Truth", "EPMD", "Out Of Business");
 
-INSERT INTO oldSchoolRap (title, artist, album)
+INSERT INTO oldSchoolRap
+ (title, artist, album)
 VALUES ("Award Tour", "A Tribe Called Quest", "Midnight Marauders");
 
-INSERT INTO oldSchoolRap (title, artist, album)
+INSERT INTO oldSchoolRap
+ (title, artist, album)
 VALUES ("Electric Relaxation", "A Tribe Called Quest", "Midnight Marauders");
 
-INSERT INTO oldSchoolRap (title, artist, album)
+INSERT INTO oldSchoolRap
+ (title, artist, album)
 VALUES ("Hoe Cakes", "MF DOOM", "MM...Food");
 
-INSERT INTO oldSchoolRap (title, artist, album)
+INSERT INTO oldSchoolRap
+ (title, artist, album)
 VALUES ("Potholderz", "MF DOOM", "MM...Food");
 
-INSERT INTO oldSchoolRap (title, artist, album)
+INSERT INTO oldSchoolRap
+ (title, artist, album)
 VALUES ("Accordion", "Madvillain", "Madvillainy");
 
-INSERT INTO oldSchoolRap (title, artist, album)
+INSERT INTO oldSchoolRap
+ (title, artist, album)
 VALUES ("Figaro", "Madvillain", "Madvillainy");
 
-INSERT INTO oldSchoolRap (title, artist, album)
+INSERT INTO oldSchoolRap
+ (title, artist, album)
 VALUES ("All Caps", "Madvillain", "Madvillainy");
 
 REATE TABLE undergroundHipHop(

@@ -22,8 +22,8 @@ const PORT = process.env.PORT || 8080
 // });
 
 
-app.get('/api', (req, res) => {
-  db.Test.findAll().then((result) => {
+app.get('/api/rap', (req, res) => {
+  db.Rap.findAll().then((result) => {
     res.json(result)
   })
 })
