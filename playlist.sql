@@ -314,7 +314,7 @@ CREATE TABLE alternative(
     artist VARCHAR(45) NULL,
     album VARCHAR(45) NULL,
     PRIMARY KEY(id)
-)
+);
 
 INSERT INTO alternative(title, artist, album)
 VALUES ("Performer", "Montero", "Montero");

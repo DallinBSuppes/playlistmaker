@@ -1,8 +1,8 @@
 {
   "development": {
     "username": "root",
-    "password": "Washington#123",
-    "database": "testdb",
+    "password": "Bi9602689",
+    "database": "playlistdb",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
