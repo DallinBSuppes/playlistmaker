@@ -22,19 +22,34 @@ const PORT = process.env.PORT || 8080
 // });
 
 
-app.get('/api/rap', (req, res) => {
-  db.Rap.findAll().then((result) => {
-    res.json(result)
+app.get('/rap', (req, res) => {
+  db.Rap.findAll().then((dbrap) => {
+  //  console.log(dbrap)
+
+    let arr = [];
+    for (let i =0; i < dbrap.length; i++) {
+      arr.push(dbrap[i]);
+    }
+    let randomRapSong = arr[Math.floor(Math.random() * arr.length)];
+    let obj = {
+      Rap: randomRapSong,
+      raps: arr
+    }
+    console.log(obj.Rap.dataValues.title)
+    res.render('rap',obj)
+    // res.render('rap')
   })
-})
+  .catch((err)=>{
+    console.log(err);
+  });
+});
 
 app.get('/', (req, res) => {
   res.render('index')
 
-  
-
 })
-
+// app.use('/raps', require('./routes/raps'))
+// app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static('public'))
 
 db.sequelize.sync().then(function () {
@@ -44,16 +59,3 @@ db.sequelize.sync().then(function () {
   })
 })
 
-// var con = mysql.createConnection({
-//   host: "127.0.0.1",
-//   user: "root",
-//   password: "",
-//   database: "playlistdb"
-// });
-// con.connect(function(err) {
-//   if (err) throw err;
-//   con.query("SELECT * FROM rap", function (err, result, fields) {
-//     if (err) throw err;
-//     console.log(result);
-//   });
-// });
