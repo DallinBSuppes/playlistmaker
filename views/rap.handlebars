@@ -1,0 +1,11 @@
+<section id="rap" class="container">
+  <h1>All Rap Songs</h1>
+
+  {{#each raps}}
+  <div class="rap">
+    <ul>
+    <li>Title: {{dataValues.title}}, Album: {{dataValues.album}}, Artist: {{dataValues.artist}}</li>
+    </ul>
+  </div>
+  {{/each}}
+</section>
