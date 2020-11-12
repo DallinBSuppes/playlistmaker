@@ -1,0 +1,11 @@
+<section id="rock" class="container">
+  <h1>All Rock Songs</h1>
+
+  {{#each rocks}}
+  <div class="rock">
+    <ul>
+    <li>Title: {{dataValues.title}}, Album: {{dataValues.album}}, Artist: {{dataValues.artist}}</li>
+    </ul>
+  </div>
+  {{/each}}
+</section>
