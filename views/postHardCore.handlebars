@@ -1,4 +1,63 @@
 <section id="postHardCore" class="container">
+ <!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Post Hardcore Playlist</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="public\css\main.css" />
+	</head>
+	<body class="is-preload">
+
+			<header id="header">
+				<a href="index.html">Post  Hardcore</a>
+				<nav>
+					<a href="#menu">Menu</a>
+				</nav>
+			</header>
+
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+				</ul>
+			</nav>
+	
+			<div id="heading" >
+				<h1>All Post Hardcore songs</h1>
+			</div>
+
+			<section id="main" class="wrapper">
+				<div class="inner">
+					<div class="content">
+						<header>
+							<h2>Songs</h2>
+						</header>
+					  {{#each posts}}
+            <div class="postHarcore">
+              <ul>
+              <li>Title: {{dataValues.title}}, Album: {{dataValues.album}}, Artist: {{dataValues.artist}}</li>
+              </ul>
+            </div>
+           {{/each}}
+						</div>
+				</div>
+			</section>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
+
+
+</section>
+
+{{!-- 
   <h1>All Rock Songs</h1>
 
   {{#each posts}}
@@ -8,4 +67,4 @@
     </ul>
   </div>
   {{/each}}
-</section>
+</section> --}}

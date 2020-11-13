@@ -1,11 +1,58 @@
 <section id="rap" class="container">
-  <h1>All Rap Songs</h1>
+ <!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Rap Playlist</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="public\css\main.css" />
+	</head>
+	<body class="is-preload">
 
-  {{#each raps}}
-  <div class="rap">
-    <ul>
-    <li>Title: {{dataValues.title}}, Album: {{dataValues.album}}, Artist: {{dataValues.artist}}</li>
-    </ul>
-  </div>
-  {{/each}}
+			<header id="header">
+				<a href="index.html">Rap</a>
+				<nav>
+					<a href="#menu">Menu</a>
+				</nav>
+			</header>
+
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+				</ul>
+			</nav>
+	
+			<div id="heading" >
+				<h1>Rap Playlist</h1>
+			</div>
+
+			<section id="main" class="wrapper">
+				<div class="inner">
+					<div class="content">
+						<header>
+							<h2>Songs</h2>
+						</header>
+					  {{#each raps}}
+            <div class="rap">
+              <ul>
+              <li>Title: {{dataValues.title}}, Album: {{dataValues.album}}, Artist: {{dataValues.artist}}</li>
+              </ul>
+            </div>
+           {{/each}}
+						</div>
+				</div>
+			</section>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
+
+
 </section>
