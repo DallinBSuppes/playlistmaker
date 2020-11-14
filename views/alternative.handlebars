@@ -1,4 +1,95 @@
 <section id="alternative" class="container">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test</title>
+  <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.7/dist/css/uikit.min.css" />
+  <link rel="stylesheet" href="/css/main.css" />
+</head>
+<style>
+  /* h1 {text-align: center; font-size: x-large; font: bold; color: white;} */
+</style>
+<!-- <body style="background-color:#7375f8;"> -->
+<body class="">
+    <nav class="uk-navbar-container" uk-navbar>
+        <div class="uk-navbar-left">
+            <ul class="uk-navbar-nav">
+                <li class="uk-active"><a href="#">SongList</a></li>
+                <li>
+                    <a href="#">Create Account</a>
+                    <div class="uk-navbar-dropdown ">
+                        <ol class="uk-nav uk-navbar-dropdown-nav">
+                            <li class="uk-active"><a href="#">Active</a></li>
+                            <li><a href="#">Item</a></li>
+                            <li class="uk-nav-header">Header</li>
+                            <li><a href="#">Item</a></li>
+                            <li><a href="#">Item</a></li>
+                            <li class="uk-nav-divider"></li>
+                        </ol>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav">
+                <li>
+                    <a href="#">LOGIN</a>
+                    <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li class="uk-active"><a href="#">Active</a></li>
+                    </div>
+                </li>
+            </ul>
+        </div> -->
+    </nav>
+    <h1 class="uk-heading-line uk-text-center"><span>Alternative</span></h1>
+<section id="alternative" class="container">
+       <body class="is-preload">
+        <h1 class="uk-heading-divider">Add/List</h1>
+               <section id="main" class="wrapper">
+                   <div class="uk-child-width-expand@s uk-text-center">
+                       <div class="uk-card uk-card-default uk-card-body">
+                           <header>
+                               <h2>Add Song</h2>
+                               <form class="alternativeInput">
+                                               <label for="Song">Song:</label><br>
+                                               <input type="text" id="Song" name="Song"><br>
+                                               <label for="Artist">Artist:</label><br>
+                                               <input type="text" id="Artist" name="Artist"><br>
+                                               <label for="Album">Album:</label><br>
+                                               <input type="text" id="Album" name="Album"><br>
+                                                  <input type="submit">
+                                       </form>
+                           </header>
+                       </div>   
+                       <div class="uk-card uk-card-default uk-card-body">   
+                         {{#each alternatives}}
+               <div class="alternative">
+                 <ul>
+                 <li>Title: {{dataValues.title}}, Album: {{dataValues.album}}, Artist: {{dataValues.artist}}</li>
+                 </ul>
+               </div>
+              {{/each}}
+                           </div>
+                   </div>
+               </section>
+           <!-- Scripts -->
+               <script src="assets/js/jquery.min.js"></script>
+               <script src="assets/js/browser.min.js"></script>
+               <script src="assets/js/breakpoints.min.js"></script>
+               <script src="assets/js/util.js"></script>
+               <script src="assets/js/main.js"></script>
+       </body>
+   </html>
+   </section>
+
+{{!-- <section id="alternative" class="container">
  <!DOCTYPE HTML>
 <html>
 	<head>
@@ -65,4 +156,4 @@
 </html>
 
 
-</section>
+</section> --}}
