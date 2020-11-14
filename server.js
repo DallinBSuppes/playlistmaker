@@ -77,6 +77,14 @@ app.get('/rock', (req, res) => {
   });
 });
 
+app.post("/api/rock", function(req, res){
+  console.log(req.body)
+  db.Rock.create(req.body)
+  .then(function(results){
+    res.json(results)
+  })
+})
+
 app.get('/postHardCore', (req, res) => {
   db.PostHardCore.findAll().then((dbpost) => {
 
@@ -95,6 +103,14 @@ app.get('/postHardCore', (req, res) => {
     console.log(err);
   });
 });
+
+app.post("/api/postHardCore", function(req, res){
+  console.log(req.body)
+  db.postHardCore.create(req.body)
+  .then(function(results){
+    res.json(results)
+  })
+})
 
 app.get('/oldSchoolRap', (req, res) => {
   db.OldSchoolRap.findAll().then((dboldschool) => {
