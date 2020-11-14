@@ -132,6 +132,14 @@ app.get('/oldSchoolRap', (req, res) => {
   });
 });
 
+app.post("/api/oldSchoolRap", function(req, res){
+  console.log(req.body)
+  db.oldSchoolRap.create(req.body)
+  .then(function(results){
+    res.json(results)
+  })
+})
+
 // app.get('/oldSchoolRap', (req, res) => {
 //   db.OldSchoolRap.findAll().then((dboldschool) => {
 
@@ -170,6 +178,14 @@ app.get('/indie', (req, res) => {
   });
 });
 
+app.post("/api/indie", function(req, res){
+  console.log(req.body)
+  db.indie.create(req.body)
+  .then(function(results){
+    res.json(results)
+  })
+})
+
 app.get('/electronic', (req, res) => {
   db.Electronic.findAll().then((dbelectronic) => {
 
@@ -189,6 +205,14 @@ app.get('/electronic', (req, res) => {
   });
 });
 
+app.post("/api/electronic", function(req, res){
+  console.log(req.body)
+  db.electronic.create(req.body)
+  .then(function(results){
+    res.json(results)
+  })
+})
+
 app.get('/alternative', (req, res) => {
   db.Alternative.findAll().then((dbalternative) => {
 
@@ -207,6 +231,13 @@ app.get('/alternative', (req, res) => {
     console.log(err);
   });
 });
+app.post("/api/alternative", function(req, res){
+  console.log(req.body)
+  db.Alternative.create(req.body)
+  .then(function(results){
+    res.json(results)
+  })
+})
 
 app.get('/', (req, res) => {
   res.render('index')

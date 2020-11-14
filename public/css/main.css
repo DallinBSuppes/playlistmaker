@@ -1,4 +1,4 @@
-@-ms-viewport {
+/* @-ms-viewport {
   width: device-width; }
 body {
   -ms-overflow-style: scrollbar; }
@@ -63,7 +63,7 @@ input, select, textarea {
   appearance: none; }
 
 /* Typography */
-html {
+/* html {
   font-size: 13pt; }
   @media screen and (max-width: 1680px) {
     html {
@@ -197,7 +197,7 @@ hr {
   border-bottom-color: rgba(0, 0, 0, 0.25); }
 
 /* Inner */
-.inner {
+/* .inner {
   margin: 0 auto;
   width: 75rem;
   max-width: calc(100% - 6rem); }
@@ -212,4 +212,4 @@ hr {
       }
       .rapInput{
         background-color: blue;
-      }
+      /* }  */
