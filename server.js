@@ -11,8 +11,13 @@ var app = express()
 app.engine('handlebars', hbs({ defaultLayout: 'main' }))
 app.set('view engine', 'handlebars')
 
+app.use(express.static("public"))
 const PORT = process.env.PORT || 8080
 
+
+
+app.use(express.urlencoded({extended:true}))
+app.use(express.json())
 // connection.connect(function(err) {
 //   if (err) {
 //     console.error('error connecting: ' + err.stack);
@@ -43,6 +48,15 @@ app.get('/rap', (req, res) => {
     console.log(err);
   });
 });
+
+app.post("/api/rap", function(req, res){
+  console.log(req.body)
+  db.Rap.create(req.body)
+  .then(function(results){
+    res.json(results)
+  })
+})
+
 
 app.get('/rock', (req, res) => {
   db.Rock.findAll().then((dbrock) => {
@@ -94,6 +108,7 @@ app.get('/oldSchoolRap', (req, res) => {
       OldSchool: randomOldSchoolSong,
       oldschools: arr
     }
+    
     res.render('oldSchoolRap',obj)
   })
   .catch((err)=>{
@@ -101,24 +116,24 @@ app.get('/oldSchoolRap', (req, res) => {
   });
 });
 
-app.get('/oldSchoolRap', (req, res) => {
-  db.OldSchoolRap.findAll().then((dboldschool) => {
+// app.get('/oldSchoolRap', (req, res) => {
+//   db.OldSchoolRap.findAll().then((dboldschool) => {
 
-    let arr = [];
-    for (let i =0; i < dboldschool.length; i++) {
-      arr.push(dboldschool[i]);
-    }
-    let randomOldSchoolSong = arr[Math.floor(Math.random() * arr.length)];
-    let obj = {
-      OldSchool: randomOldSchoolSong,
-      oldschools: arr
-    }
-    res.render('oldSchoolRap',obj)
-  })
-  .catch((err)=>{
-    console.log(err);
-  });
-});
+//     let arr = [];
+//     for (let i =0; i < dboldschool.length; i++) {
+//       arr.push(dboldschool[i]);
+//     }
+//     let randomOldSchoolSong = arr[Math.floor(Math.random() * arr.length)];
+//     let obj = {
+//       OldSchool: randomOldSchoolSong,
+//       oldschools: arr
+//     }
+//     res.render('oldSchoolRap',obj)
+//   })
+//   .catch((err)=>{
+//     console.log(err);
+//   });
+// });
 
 app.get('/indie', (req, res) => {
   db.Indie.findAll().then((dbindie) => {
@@ -168,7 +183,7 @@ app.get('/alternative', (req, res) => {
     let randomAlternativeSong = arr[Math.floor(Math.random() * arr.length)];
     let obj = {
       Alternative: randomAlternativeSong,
-      alternativess: arr
+      alternatives: arr
     }
     res.render('alternative',obj)
   })

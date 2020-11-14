@@ -32,12 +32,24 @@
 				<div class="inner">
 					<div class="content">
 						<header>
-							<h2>Songs</h2>
+							<h2>Songs
+									<form class="rapInput">
+											<label for="Song">Song:</label><br>
+											<input type="text" id="Song" name="Song"><br>
+											<label for="Artist">Artist:</label><br>
+											<input type="text" id="Artist" name="Artist">
+											<label for="Album">Album:</label><br>
+											<input type="text" id="Album" name="Album">
+											   <input type="submit">
+									</form>
+
+							</h2>
+
 						</header>
 					  {{#each raps}}
             <div class="rap">
               <ul>
-              <li>Title: {{dataValues.title}}, Album: {{dataValues.album}}, Artist: {{dataValues.artist}}</li>
+              <li>Title: {{dataValues.title}}, Album: {{dataValues.album}}, Song: {{dataValues.artist}}</li>
               </ul>
             </div>
            {{/each}}
