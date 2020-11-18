@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "root",
-    "password": "Bi9602689",
+    "username": "aianku0mdf7li1f3",
+    "password": "fth4eea6tt07lr5i",
     "database": "playlistdb",
-    "host": "127.0.0.1",
+    "host": "q68u8b2buodpme2n.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   },
   "test": {

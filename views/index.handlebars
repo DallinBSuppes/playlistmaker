@@ -13,131 +13,139 @@
   <link rel="stylesheet" href="/css/main.css" />
 </head>
 <style>
-  h1 {text-align: center; font-size: x-large; font: bold; color: white;}
+  /* h1 {text-align: center; font-size: x-large; font: bold; color: white;} */
 </style>
-<body>
-<body class="is-preload">
+<!-- <body style="background-color:#7375f8;"> -->
+<body class="">
+	<nav class="uk-navbar-container" uk-navbar>
+		<div class="uk-navbar-left">
+	
+			<ul class="uk-navbar-nav">
+				<li class="uk-active"><a href="#">SongList</a></li>
+				<li>
+					<a href="#">Create Account</a>
+					<div class="uk-navbar-dropdown ">
+						<ul class="uk-nav uk-navbar-dropdown-nav">
+							<li class="uk-active"><a href="#">Active</a></li>
+							<li><a href="#">Item</a></li>
+							<li class="uk-nav-header">Header</li>
+							<li><a href="#">Item</a></li>
+							<li><a href="#">Item</a></li>
+							<li class="uk-nav-divider"></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+	
+		</div>
+		<div class="uk-navbar-right">
+	
+			<ul class="uk-navbar-nav">
+				<li>
+					<a href="#">LOGIN</a>
+					<div class="uk-navbar-dropdown">
+						<ul class="uk-nav uk-navbar-dropdown-nav">
+							<li class="uk-active"><a href="#">Active</a></li>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</nav>
 
-		<!-- Header -->
-			<header id="header"></header>
-				<a class="logo" href="index.html">PlaylistMaker
-				</a>
-				<nav>
-					<a href="#menu">Menu</a>
-				</nav>
-			</header>
-
-		<!-- Nav -->
-			<nav id="Login">
-				<ul class="links">
-					<li><a href="index.html">Home</a></li>
-				</ul>
-			</nav>
-
-		<!-- Banner -->
-			<section id="banner">
-				<div class="inner">
-					<h1>PlayList</h1>
-					<p>The Future of Music</p>
-				</div>
-			</section>
+	<h1 class="uk-heading-line uk-text-center"><span>SongList: The Future of Music</span></h1>
 
 		<!-- Highlights -->
 			<section class="wrapper">
-				<div class="inner">
-					<header class="special">
-						<h2>All The Genres You Need</h2>
-						<p>Chose to make a new playlist, or view previous playlists made by other users!</p>
-						<button class="uk-button uk-button-secondary uk-button-small">Make Account</button>
-					</header>
-					<div class="highlights">
-						<section>
-							<div class="content">
-								<header>
-								    <h3>Post Hardcore</h3>
-								</header>
-								<p>Playlists including favorites like Dance Gavin Dance, Pierce the Veil, Memphis May Fire, and more!</p>
-								<a class="uk-button uk-button-secondary uk-button-small" href="postHardCore">View Playlists</a>
-							</div>
-						</section>
-						<section>
-							<div class="content">
-								<header>
-									<h3>Rap</h3>
-								</header>
-								<p>Playlists including classic artists including Kanye West, Mac Miller, Travis Scott, and more!</p>
-								<a class="uk-button uk-button-secondary uk-button-small" href="rap">View Playlists</a>
-							</div>
-						</section>
-						<section>
-							<div class="content">
-								<header>
-									<h3>Old School Rap</h3>
-								</header>
-								<p>Playlists including classic artists including MF DOOM, A Tribe Called Quest, Nas, and more!</p>
-								<a class="uk-button uk-button-secondary uk-button-small" href="Old School Rap">View Playlists</a>
-							</div>
-						</section>
-						<section>
-							<div class="content">
-								<header>
-									<h3>UnderGround Hip-Hop</h3>
-								</header>
-								<p>Explore the unknown including HDMI, Pouya, Lil Peep, and more!</p>
-								<a class="uk-button uk-button-secondary uk-button-small" href="undergroundHipHop">View Playlists</a>
-							</div>
-						</section>
-						<section>
-							<div class="content">
-								<header>
-									<h3>Indie</h3>
-								</header>
-								<p>Sit back and relax with artists like Rex Orange County, Oliver Tree, JAWNY, and More!</p>
-								<a class="uk-button uk-button-secondary uk-button-small" href="indie">View Playlists</a>
-							</div>
-						</section>
-						<section>
-							<div class="content">
-								<header>
-									<h3>Alternative</h3>
-								</header>
-								<p>Understand the meaning of music with artists like Gorillaz, Cage the Elephant, Montero, and more!</p>
-								<a class="uk-button uk-button-secondary uk-button-small" href="alternative">View Playlists</a>
-							</div>
-						</section>
-						<section>
-							<div class="content">
-								<header>
-									<h3>Rock</h3>
-								</header>
-								<p>Rock out with classic artists like ACDC, Motley Crue, The Cult, and more!</p>
-								<a class="uk-button uk-button-secondary uk-button-small" href="rock">View Playlists</a>
-							</div>
-						</section>
-						<section>
-							<div class="content">
-								<header>
-									<h3>Electronic</h3>
-								</header>
-								<p>Figure out one of the newer sides of music including Grimes, little Draggon, Portishead, and more!</p>
-								<a class="uk-button uk-button-secondary uk-button-small" href="electronic">View Playlists</a>
-							</div>
-						</section>
-						
-						<section>
-							<div class="content">
-								<header>
-									<h3>Make your own</h3>
-								</header>
-								<p>Make your own Playlist to hsow off your style and personality!</p>
-								<button class="uk-button uk-button-secondary uk-button-small">View Playlists</button>
-							</div>
-						</section>
+
+			<div class="uk-child-width-expand@s uk-text-center" uk-grid>
+    			<div>
+        			<div class="uk-card uk-card-default uk-card-body">
+						<header>
+							<h3>Rap</h3>
+						</header>
+						<p>Playlists including classic artists including Kanye West, Mac Miller, Travis Scott, and more!</p>
+						<a class="uk-button uk-button-secondary uk-button-small" href="rap">View Songs</a>
 					</div>
+    			</div>
+    			<div>
+        			<div class="uk-card uk-card-default uk-card-body">
+						<header>
+							<h3>Rap</h3>
+						</header>
+						<p>Playlists including classic artists including Kanye West, Mac Miller, Travis Scott, and more!</p>
+						<a class="uk-button uk-button-secondary uk-button-small" href="rap">View Songs</a>
+					</div>
+    			</div>
+    			<div>
+        			<div class="uk-card uk-card-default uk-card-body">
+						<header>
+							<h3>UnderGround Hip-Hop</h3>
+						</header>
+						<p>Explore the unknown including HDMI, Pouya, Lil Peep, and more!</p>
+						<a class="uk-button uk-button-secondary uk-button-small" href="undergroundHipHop">View Songs</a>
+					</div>
+    			</div>
+			</div>
+
+				
+		
+
+			<div class="uk-child-width-expand@s uk-text-center" uk-grid>
+    			<div>
+        			<div class="uk-card uk-card-default uk-card-body">
+						<header>
+							<h3>UnderGround Hip-Hop</h3>
+						</header>
+						<p>Explore the unknown including HDMI, Pouya, Lil Peep, and more!</p>
+						<a class="uk-button uk-button-secondary uk-button-small" href="undergroundHipHop">View Songs</a>
+					</div>
+    			</div>
+    			<div>
+        			<div class="uk-card uk-card-default uk-card-body">
+						<header>
+							<h3>Indie</h3>
+						</header>
+						<p>Sit back and relax with artists like Rex Orange County, Oliver Tree, JAWNY, and More!</p>
+						<a class="uk-button uk-button-secondary uk-button-small" href="indie">View Songs</a>
+					</div>
+    			</div>
+    			<div>
+        			<div class="uk-card uk-card-default uk-card-body">
+						<header>
+							<h3>Alternative</h3>
+						</header>
+						<p>Understand the meaning of music with artists like Gorillaz, Cage the Elephant, Montero, and more!</p>
+						<a class="uk-button uk-button-secondary uk-button-small" href="alternative">View Songs</a>
+					</div>
+    			</div>
+			</div>
+
+
+
+		<div class="uk-child-width-expand@s uk-text-center" uk-grid>
+    		<div>
+        		<div class="uk-card uk-card-default uk-card-body">
+					<header>
+						<h3>Rock</h3>
+					</header>
+					<p>Rock out with classic artists like ACDC, Motley Crue, The Cult, and more!</p>
+					<a class="uk-button uk-button-secondary uk-button-small" href="rock">View Songs</a>
 				</div>
-			</section>
+    		</div>
+    		<div>
+        		<div class="uk-card uk-card-default uk-card-body">
+					<header>
+						<h3>Electronic</h3>
+					</header>
+					<p>Figure out one of the newer sides of music including Grimes, little Draggon, Portishead, and more!</p>
+					<a class="uk-button uk-button-secondary uk-button-small" href="electronic">View Playlists</a>
+				</div>
+    		</div>
+		</div>
 
 		 
+
+		
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.7/dist/js/uikit.min.js"></script>
